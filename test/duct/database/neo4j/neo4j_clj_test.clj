@@ -1,7 +1,7 @@
 (ns duct.database.neo4j.neo4j-clj-test
   (:require [clojure.test :refer :all]
-            [integrant.core :as ig]
-            [neo4j-clj.core :as neo4j]))
+            [duct.database.neo4j.neo4j-clj]
+            [integrant.core :as ig]))
 
 (deftest key-derive-test
   (is (isa? :duct.database.neo4j/neo4j-clj :duct.database/neo4j))
